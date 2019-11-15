@@ -127,10 +127,10 @@ function initMap() {
   var infowindow = new google.maps.InfoWindow();
   var infowindowContent = document.getElementById('infowindow-content');
   infowindow.setContent(infowindowContent);
-  var image = 'https://openclipart.org/image/50px/svg_to_png/225413/mini-tomato.png';
+  var image = '../img/tom.png';
   var marker = new google.maps.Marker({
     map: map,
-    draggable:true,
+    draggable: true,
     icon: image
   });
   marker.addListener('click', function() {
