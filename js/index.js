@@ -142,6 +142,7 @@ function initMap() {
     handleLocationError(false, infoWindow, map.getCenter());
   }
   //END GET POSITION
+  
 }
 
 //BOUNCE WHEN MARKER IS PRESSED
