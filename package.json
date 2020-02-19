@@ -1,0 +1,27 @@
+{
+  "name": "urbantomato",
+  "version": "1.0.0",
+  "description": "Toms Growing Tracking App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmegallen/UrbanTomato.git"
+  },
+  "keywords": [
+    "Grow",
+    "Tomamto",
+    "Yarden",
+    "Window",
+    "box",
+    "app"
+  ],
+  "author": "J Gallen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmegallen/UrbanTomato/issues"
+  },
+  "homepage": "https://github.com/jmegallen/UrbanTomato#readme"
+}
