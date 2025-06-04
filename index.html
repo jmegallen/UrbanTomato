@@ -5,26 +5,17 @@
   <meta charset="utf-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="Urban Tomato organic produce in your home.">
   <meta name="author" content="J Gallen">
   <title>Urban Tomato</title>
-  <!-- Bulma core CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
+  </head>
 
 <body id="bodyimg" class="has-navbar-fixed-top">
-
-  <!-- Nav -->
 
   <nav class="navbar is-fixed-top is-transparent">
     <div class="navbar-brand">
@@ -64,14 +55,12 @@
           </div>
         </div>
       </div>
+    </div>
   </nav>
-  <!-- Nav -->
-  <div id="#bulnav"></div>
-  </div>
+  <div id="bulnav"></div>
 
 
   <div class="section is-medium">
-
     <div class="container is-medium">
       <h1 class="title">Urban Tomato</h1>
       <h2 class="subtitle">Sriracha kale chips PBR&B narwhal incididunt, sed sunt small batch godard.</h2>
@@ -83,6 +72,7 @@
       <p>Seitan tousled incididunt shoreditch echo park raclette gochujang 90's bicycle rights austin paleo. Ipsum est art party laborum small batch, deserunt coloring book austin direct trade tattooed tempor ad hot chicken do helvetica. In butcher
         quis fingerstache, narwhal disrupt art party knausgaard crucifix trust fund. +1 poke stumptown semiotics tumblr vape quis adipisicing. Kinfolk af single-origin coffee scenester pop-up hella.</p>
     </div>
+
     <div class="container buttons has-addons is-right">
       <span class="button">Locate Me</span>
       <span class="button">Search Address</span>
@@ -92,21 +82,53 @@
     <div id="like_button_container"></div>
   </div>
 
+  <div class="section is-medium">
+    <div class="container">
+      <h3 class="title is-4">Plant Environment Details</h3>
 
+      <div class="field">
+        <label class="label">Is your plant covered (protected from rain)?</label>
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="coveredStatus" value="covered"> Yes, it's covered
+          </label>
+          <label class="radio">
+            <input type="radio" name="coveredStatus" value="uncovered"> No, it's exposed
+          </label>
+        </div>
+      </div>
 
+      <div class="field">
+        <label class="label">Which direction does the plant face (for sun exposure)?</label>
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="sunDirection" value="south"> <i class="fas fa-sun"></i> South
+          </label>
+          <label class="radio">
+            <input type="radio" name="sunDirection" value="west"> <i class="fas fa-sun"></i> West
+          </label>
+          <label class="radio">
+            <input type="radio" name="sunDirection" value="north"> <i class="fas fa-sun"></i> North
+          </label>
+          <label class="radio">
+            <input type="radio" name="sunDirection" value="east"> <i class="fas fa-sun"></i> East
+          </label>
+          <label class="radio">
+            <input type="radio" name="sunDirection" value="all-around"> <i class="fas fa-globe"></i> All Around (e.g., open garden)
+          </label>
+        </div>
+      </div>
 
-
-  <!-- <div class="section">
-
-  </div> -->
-
+    </div>
+  </div>
   <div class="section is-three-quarter" id="map"></div>
-  
+
   <div class="section is-medium" id="weather-info">
     <h3 class="title is-4">Local Weather & Sun Outlook</h3>
     <div id="current-weather"></div>
     <div id="forecast-weather"></div>
   </div>
+
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
@@ -124,12 +146,11 @@
     <span id="place-address"></span>
   </div>
   <div class="">
-    <img src="img/tomBack.jpeg"
+    <img src="img/tomBack.jpeg" alt="Tomato Plants Background">
   </div>
 
 
-  <!-- Replace the value of the key parameter with your own API key. -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
@@ -142,8 +163,7 @@
 
   <script type="text/babel" src="js/bul_nav.js"></script>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1tUKcCZgi2gEL9nACF4XyI0AYwrYwI0E&callback=initMap&libraries=places">
-  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1tUKcCZgi2gEL9nACF4XyI0AYwrYwI0E&callback=initMap&libraries=places"></script>
 
 </body>
-
+</html>

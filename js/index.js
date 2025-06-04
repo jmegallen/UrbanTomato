@@ -208,3 +208,34 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
                         'Error: Your browser doesn\'t support geolocation.');
   infoWindow.open(map);
 }
+// Function to get the selected radio button value
+function getSelectedRadioValue(name) {
+  const radios = document.getElementsByName(name);
+  for (const radio of radios) {
+    if (radio.checked) {
+      return radio.value;
+    }
+  }
+  return null; // No option selected
+}
+
+// Example of how to use it (e.g., when a "Save" or "Update" button is clicked)
+function getPlantEnvironmentDetails() {
+  const coveredStatus = getSelectedRadioValue('coveredStatus');
+  const sunDirection = getSelectedRadioValue('sunDirection');
+
+  console.log('Covered Status:', coveredStatus);
+  console.log('Sun Direction:', sunDirection);
+
+  // You can then pass these values to your weather fetching or recommendation logic
+  // e.g., if (coveredStatus === 'covered') { /* adjust precipitation logic */ }
+}
+
+// You might want to call getPlantEnvironmentDetails()
+// when a button is clicked, or when the user changes a selection.
+// For example, if you have a "Save Details" button:
+// document.getElementById('save-details-button').addEventListener('click', getPlantEnvironmentDetails);
+
+// Or, if you want to get them when the map location updates:
+// Inside your initMap or place_changed listener:
+// getPlantEnvironmentDetails(); // Call this to update based on current selections
