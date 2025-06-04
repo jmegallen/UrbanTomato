@@ -47,5 +47,5 @@ var BulNav = React.createClass({
   }
 });
 
-const domContainer = document.querySelector('#bulnav');
-ReactDOM.render(e(BulNav), domContainer);
+const bulNavContainer = document.querySelector('#bulnav'); // Renamed
+ReactDOM.render(e(BulNav), bulNavContainer);
