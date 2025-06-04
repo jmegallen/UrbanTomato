@@ -43,7 +43,6 @@ var BulNav = React.createClass({
             </div>
           </div>
         </div></nav>
-      {/* Nav */}
     );
   }
 });
