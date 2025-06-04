@@ -1,11 +1,17 @@
-// Example of how to use it (e.g., when a "Save" or "Update" button is clicked)
-function getPlantEnvironmentDetails() {
-  const coveredStatus = getSelectedRadioValue('coveredStatus');
-  const sunDirection = getSelectedRadioValue('sunDirection');
+// This file now contains general app logic and UI interactions,
+// and orchestrates calls to functions defined in other files.
 
-  console.log('Covered Status:', coveredStatus);
-  console.log('Sun Direction:', sunDirection);
+// Event listener for when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Setup event listener for "Save Plant Details" button
+  const saveButton = document.getElementById('save-plant-details-button');
+  if (saveButton) {
+    saveButton.addEventListener('click', collectPlantEnvironmentData); // Calls function from environment.js
+  }
 
-  // You can then pass these values to your weather fetching or recommendation logic
-  // e.g., if (coveredStatus === 'covered') { /* adjust precipitation logic */ }
-}
+  // Any other general app setup that doesn't belong specifically to map or weather
+  // For example, if you had other global event listeners or initializations.
+
+  // Note: initMap is called by the Google Maps API script directly via callback=initMap
+  // Weather data fetching is called from within map.js once location is available.
+});
