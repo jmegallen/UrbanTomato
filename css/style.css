@@ -40,7 +40,7 @@ html, body {
   display: inline;
 }
 #bodyimg {
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: top;
   background-image: linear-gradient(rgba(255,255,255,.5),
