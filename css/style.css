@@ -40,9 +40,10 @@ html, body {
   display: inline;
 }
 #bodyimg {
-  background-attachment: scroll;
+  background-attachment: scroll; /* Changed from fixed to scroll */
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top center; /* Centered for better appearance */
+  background-size: cover; /* Ensures it covers the whole page */
   background-image: linear-gradient(rgba(255,255,255,.5),
                                     rgba(255,255,255,.5)),
                                     url("../img/tomBack.jpeg");
